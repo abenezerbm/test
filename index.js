@@ -48,7 +48,7 @@ const init = async () => {
             path : '/',
             handler: function(request , h ){
                 try{
-                    console.log(request);
+                    console.log(request.payload);
                     return h.response(request.payload);
                 }catch(error){
             console.log(error);
